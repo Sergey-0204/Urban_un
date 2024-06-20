@@ -13,7 +13,8 @@
 
 
 # "Множества"
-set_ = {1, 2, 3, 4, 5, 1, 2, 3, 4, 'string' , True, (1,2)}
+set_ = {1, 2, 3, 4, 5, 1, 2, 3, 4, 'string', True, (1,2)}
 print(set_)
-List_ =[1, 1, 1, 2, 2, 3, 3]
-print(set(List_))
+list_ = [1, 1, 1, 2, 2, 3, 3]
+print (set(list ))
+
