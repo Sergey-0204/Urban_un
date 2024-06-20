@@ -14,7 +14,9 @@
 
 # "Множества"
 set_ = {1, 2, 3, 4, 5, 1, 2, 3, 4, 'string', True, (1,2)}
-print(set_)
 list_ = [1, 1, 1, 2, 2, 3, 3]
-print (set(list ))
+list_ = set(list_)
+list_ = (list_)
+print(list_.add(5))
+print(list_)
 
