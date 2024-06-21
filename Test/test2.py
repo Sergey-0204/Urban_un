@@ -8,3 +8,5 @@ grades_sum = (sum(grades[0])/len(grades[0]),sum(grades[1])/len(grades[1]),
 
 students_grades = dict(zip(students_list, grades_sum ))
 print(students_grades)
+
+
