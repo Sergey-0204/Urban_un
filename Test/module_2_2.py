@@ -5,5 +5,7 @@ third = 358
 print(first)
 print(second)
 print(third)
-all = first == second == third
-print(all)
+if first == second == third:
+    print(3)
+else:
+    print(0)
