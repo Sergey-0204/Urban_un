@@ -1,7 +1,7 @@
 my_list = [42, 69, 322, 13, 99, -5, 9, 8, 7, -6, 5]
 zero = [0]
-print (len(my_list[0:4]))
-while 1 > 0:
-    if my_list:
-        print(my_list)
-
+print (my_list[0])
+print (my_list[1])
+print (my_list[2])
+print (my_list[3])
+print (my_list[4])
