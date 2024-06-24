@@ -1,15 +1,30 @@
-first = 153
-second = 253
-third = 358
-
+first = 127
+second = 364
+third = 534
 print(first)
 print(second)
 print(third)
 if first == second == third:
-    print(3)
+  print(3)
 else:
-    print(0)
-if first == second or third == first or second == third:
-    print(2)
+  print(0)
+  first = 34
+  second = 50
+  third = 34
+print(first)
+print(second)
+print(third)
+if first == second or second == third or first == third:
+  print(2)
 else:
-    print(0)
+  print(0)
+first = 100
+second = 100
+third = 100
+print(first)
+print(second)
+print(third)
+if first == second == third:
+  print(3)
+else:
+  print(0)
