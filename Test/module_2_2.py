@@ -1,6 +1,9 @@
-first = 5
-second = 5
-third = 3
+first = 153
+second = 253
+third = 358
 
-if first == second == third:
-    print(3)
+print(first)
+print(second)
+print(third)
+all = first == second == third
+print(all)
