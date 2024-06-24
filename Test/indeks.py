@@ -3,12 +3,11 @@
 #print(water[2])
 #water[1] = "vodka"
 #print(water)
+from typing import List
 
-
-water = ["coca", "fanta", "pepsi"]
-water.append(True)
+water: list[str | bool | int] = ["coca", "fanta", "pepsi", True]
 print(water)
-water.extend(["string",2])
+water.extend(["string", 2])
 print(water)
 print("coca" not in water)
 print(water[0:2:2])
