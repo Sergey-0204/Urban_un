@@ -5,8 +5,5 @@ while index < len(my_list):
 
     if my_list[index] > 0:
         print(my_list[index])
-    elif my_list[index] == 0:
-        var = - index
     else:
         break
-    index += 1
