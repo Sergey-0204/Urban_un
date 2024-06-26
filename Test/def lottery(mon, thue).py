@@ -8,5 +8,5 @@ def lottery(mon,thue):
     win2 = random.choice(tickets)
     print(mon, thue)
     return win1, win2
-win, win2 =lottery("mon", 'thue')
+win1, win2 =lottery("mon", 'thue')
 print (win2)
