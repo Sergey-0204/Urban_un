@@ -4,19 +4,30 @@
 #else:  # или if num % 2 != 0:
  #   print('Нечетное')
 
-if month == 1:
-    print("Январь")
+#month = 1
+#if month == 1:
+    #print("Январь")
 
-if month == 2:
-    print("Февраль")
-
-
-if month == 3:
-    print("Март")
+#if month == 2:
+    #print("Февраль")
 
 
-if month == 4:
-    print("Апрель")
+#elif month == 3:
+    #print("Март")
 
-if month == 5:
-    print("май")
+
+#elif month == 4:
+    #print("Апрель")
+
+#elif month == 5:
+   # print("май")
+
+month = 2
+match month:
+
+    case 1:
+        print('январь')
+    case 2:
+        print('Февраль')
+    case 3:
+        print('март')
