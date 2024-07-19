@@ -11,9 +11,18 @@ class Human:
       print(f'У меня день рождения {self.age}')
 
 
+   def __len__(self):
+       return self.age
+
+  def __del__(self):
+      print(f'{self.name} ушел')
+
+
 
 ser = Human('Ser', 22)
 den = Human('Den', 45)
 #print(ser.name, ser.age)
 #rint(den.name, den.age)
+del den
 ser.birthday()
+print(len(ser))
