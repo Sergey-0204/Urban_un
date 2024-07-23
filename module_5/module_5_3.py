@@ -47,7 +47,7 @@ class House:
             return self.number_of_floors != other.number_of_floors
         return NotImplemented
 
-    def __add__(self, value):
+    def __add__(self, value):  # увеличивает количество этажей
         if isinstance(value, int):
             self.number_of_floors += value
             return self
