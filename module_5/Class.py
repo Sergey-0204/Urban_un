@@ -1,4 +1,5 @@
 class Human:
+    head = True
     def __init__(self, name, age):
         self.name = name
         self.age = age
@@ -41,4 +42,5 @@ den = Human('Den', 45)
 #print(ser == den)
 a = 6
 print(ser)
+print(Human.head)
 
