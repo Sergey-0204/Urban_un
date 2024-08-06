@@ -65,6 +65,7 @@ class Game(arcade.Window):
             self.bar.change_x = 5
             if key == arcade.key.LEFT:
                 self.bar.change_x = -5
+
     def on_key_release(self, key, modifiers):
         if key == arcade.key.RIGHT or key == arcade.key.LEFT:
             self.bar.change_x = 0
