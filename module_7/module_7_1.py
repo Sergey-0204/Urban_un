@@ -31,7 +31,7 @@ class Shop:  # Класс Магазин
             else:
                 with open(self.__file_name, 'a') as file:
                     file.write(str(product) + '\n')
-
+                    file.close()
 
 # Пример работы программы
 s1 = Shop()
