@@ -16,17 +16,16 @@ class Shop:  # Класс Магазин
             self):  # читает содержимое файла и возвращает его как единую строку. Если файл не найден, возвращает пустую строку.
         try:
             with open(self.__file_name, 'r') as file:
-                return file.read().strip()
+                return ''.join(file.readlines())
         except FileNotFoundError:
             return ""
 
     def add(self, *products):  # принимает неограниченное количество объектов класса.
-        existing_products = self.get_products().split('\n')
-        existing_names = {prod.split(', ')[0] for prod in existing_products}
-        # Проверяем, есть ли продукт с таким же названием в файле. Если да, выводит сообщение о том, что продукт уже есть.
-        # Если нет, добавляет продукт в файл.
+        existing_products = {line.split(',')[0] for line in self.get_products().strip().split('\n') if line}
+        # Проверяем, есть ли продукт с таким же названием в файле. Если да, выводит сообщение о том, что продукт уже
+        # есть. Если нет, добавляет продукт в файл.
         for product in products:
-            if product.name in existing_names:
+            if product.name in existing_products:
                 print(f"Продукт {product.name} уже есть в магазине")
             else:
                 with open(self.__file_name, 'a') as file:
@@ -38,7 +37,8 @@ s1 = Shop()
 p1 = Product('Potato', 50.5, 'Vegetables')
 p2 = Product('Spaghetti', 3.4, 'Groceries')
 p3 = Product('Potato', 5.5, 'Vegetables')
-print(p2)  # Вывод: Spaghetti, 3.4, Groceries
+
+print(p2)  # __str
 
 s1.add(p1, p2, p3)
 
