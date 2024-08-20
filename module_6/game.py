@@ -1,6 +1,7 @@
 import arcade
 
 
+
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 SCREEN_TITLE = "Pong Game"
@@ -35,6 +36,8 @@ class Bar(arcade.Sprite):
                 self.right = SCREEN_WIDTH
             if self.left <= 0:
                 self.left = 0
+
+
 
 
 class Game(arcade.Window):

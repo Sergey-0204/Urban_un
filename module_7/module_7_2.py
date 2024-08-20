@@ -14,7 +14,7 @@ def custom_write(file_name, strings): #  Фунция с двумя аргуме
     return strings_positions # Функция возвращает словарь
 
 
-# Пример использования функции
+# Пример использования функции0
 info = [
     'Text for tell.',
     'Используйте кодировку utf-8.',
