@@ -2,9 +2,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Данные
-municipal_districts = ['Балашиха', 'Богородский', 'Восход', 'Жуковский', 'Реутов', 'Абдуллино']
-connected = [0, 33, 1, 36, 0, 33]
-not_connected = [36, 3, 35, 0, 36, 3]
+municipal_districts = ['Балашиха', 'Богородский', 'Восход', 'Жуковский', 'Клин', 'Коломна', 'Королев' ]
+connected = [0, 33, 1, 36, 35, 7, 0]
+not_connected = [36, 3, 35, 0, 1, 29, 36]
 
 x = np.arange(len(municipal_districts))
 width = 0.6
